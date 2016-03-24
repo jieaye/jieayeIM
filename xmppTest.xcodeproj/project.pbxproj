@@ -450,6 +450,7 @@
 		91EB09401CA378B60030A4E7 /* libidn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libidn.a; sourceTree = "<group>"; };
 		91EB09411CA378B60030A4E7 /* stringprep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringprep.h; sourceTree = "<group>"; };
 		91EB09421CA378B60030A4E7 /* XMPPFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPFramework.h; sourceTree = "<group>"; };
+		91EB09BF1CA37BA30030A4E7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,6 +533,7 @@
 				91DBE3F21CA0ECAD00979932 /* libresolv.tbd */,
 				91DBE3F01CA0ECA000979932 /* libxml2.tbd */,
 				91DBE1FC1CA0EC7100979932 /* main.m */,
+				91EB09BF1CA37BA30030A4E7 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1696,6 +1698,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/xmppTest/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = " /usr/include/libxml2";
 				INFOPLIST_FILE = xmppTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -1717,6 +1720,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/xmppTest/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = " /usr/include/libxml2";
 				INFOPLIST_FILE = xmppTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
