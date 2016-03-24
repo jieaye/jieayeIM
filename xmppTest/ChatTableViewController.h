@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMPPManager.h"
+#import "XMPPFramework.h"
 
-@interface ChatTableViewController : UITableViewController
+@interface ChatTableViewController : UITableViewController<XMPPStreamDelegate,UIAlertViewDelegate,XMPPMessageArchivingStorage>
+
+@property(strong,nonatomic)XMPPJID *friendJID;
+@property(strong,nonatomic)NSMutableArray *dataArr;
+@property(assign,nonatomic)NSInteger bageNum;
 
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMPPFramework.h"
+#import "XMPPManager.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<XMPPStreamDelegate>
 
-
+@property(nonatomic,strong)UITextField *textName;
+@property(nonatomic,strong)UITextField *textPass;
 @end
 

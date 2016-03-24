@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMPPManager.h"
 
-@interface TableViewController : UITableViewController
+@interface TableViewController : UITableViewController<XMPPRosterDelegate,UIAlertViewDelegate>
+
+@property(nonatomic,strong)NSMutableArray *dataArr;
+
 
 @end
